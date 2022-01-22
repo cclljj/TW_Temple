@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Taiwan Tudigong Temples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="600">
+  <meta property="og:description" content="Taiwan Tudigong Temples" />
+  <meta property="og:title" content="Taiwan Tudigong Temples" />
+  <meta property="og:url" content="https://aws.cclljj.net/TW_Temple/" />
+  <meta property="og:site_name" content="Taiwan Tudigong Temples" />
+  <!-- leaflet css -->
+  <link type="text/css" rel="stylesheet" href="leaflet/leaflet.css" />
+  <!-- voronoi map css -->
+  <link type="text/css" rel="stylesheet" href="css/voronoi-map.css"/>
+
+  <!-- d3js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
+  <!-- leaflet library -->
+  <script src="leaflet/leaflet.js"></script>
+</head>
+<body>
+  <div id='map'></div>
+  <!-- selection menu -->
+  <div id='selections' class="selections">
+    <a href='#' class="show">Choose data source</a>
+    <div class='content'>
+      <a href='#' class="hide">Hide</a>
+      <div id="toggles"></div>
+    </div>
+  </div>
+  <div id='loading'></div>
+  <!-- selected temple -->
+  <div id='selected'>
+    <table border=0>
+      <tr valign="bottom">
+        <td>
+	  <h1>請點選地圖進行查詢</h1>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="js/voronoi-main.js"></script>
+</body>
+</html>
