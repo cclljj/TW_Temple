@@ -274,7 +274,7 @@
   } else {
     // ensure voronoi legend is loaded after logo
     // add voronoi legend to the map
-    L.control.voronoiLegend({ position: 'bottomright' }).addTo(map);
+    // L.control.voronoiLegend({ position: 'bottomright' }).addTo(map);
   }
 
   // voronoi map

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="max-age=200" />
   <title>台灣土地公寺廟分佈圖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="600">
+  <meta property="og:type" content="website"/>
   <meta property="og:description" content="Voronoi diagram of Taiwan Tudigong temples" />
   <meta property="og:title" content="台灣土地公寺廟分佈圖" />
-  <meta property="og:url" content="https://aws.cclljj.net/TW_Temple/" />
+  <meta property="og:url" content="https://aws.cclljj.net/TW_Temple/index-tudigong.html" />
   <meta property="og:site_name" content="台灣土地公寺廟分佈圖" />
 <meta property="og:image" content="https://aws.cclljj.net/TW_Temple/Tudigong.png" />
 <meta property="og:image:type" content="image/png" />
@@ -17,10 +18,6 @@
   <!-- voronoi map css -->
   <link type="text/css" rel="stylesheet" href="css/voronoi-map.css"/>
 
-  <!-- d3js library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
-  <!-- leaflet library -->
-  <script src="leaflet/leaflet.js"></script>
 </head>
 <body>
   <div id='map'></div>
@@ -35,14 +32,12 @@
   <div id='loading'></div>
   <!-- selected temple -->
   <div id='selected'>
-    <table border=0>
-      <tr valign="bottom">
-        <td>
 	  <h1>請點選地圖進行查詢</h1>
-        </td>
-      </tr>
-    </table>
   </div>
+  <!-- d3js library -->
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <!-- leaflet library -->
+  <script src="leaflet/leaflet.js"></script>
   <script src="js/voronoi-main-tudigong.js"></script>
 </body>
 </html>
