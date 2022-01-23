@@ -37,11 +37,7 @@ p {
   opacity: 0.8;
   border-radius: 2px;
   padding: 5px 5px 0 5px;
-}
-
-#about {
   bottom: 10px;
-  right: 10px;
 }
 
 #about.visible {
@@ -68,10 +64,11 @@ p {
   right:10px;
   top:90px;
   width: 140px;
+  display: none;
 }
 
 #selections label {
-  display: block;
+  //display: block;
   padding-bottom: 8px;
 }
 
@@ -81,7 +78,7 @@ p {
 }
 
 #selections .key {
-  display: inline-block;
+  //display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 6px;
@@ -89,9 +86,9 @@ p {
 }
 
 #selected {
-  bottom: 20px;
-  left: 0px;
-  height: 30px;
+  bottom: 5px;
+  left: 5px;
+  height: 45px;
 }
 
 #selected h1 {
@@ -105,10 +102,26 @@ p {
   text-overflow: ellipsis;
 }
 
+#showinfo {
+      	position: absolute;
+	display: none;
+	pointer-events: none;
+	text-align: left;
+	font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 999;
+  	color: #FFFFFF;
+  	background-color: #00008B;
+  	font-weight: 300;
+//	padding: 5px;
+//	border: solid #ccc 1px;
+      }
+
 .hide,
 .show {
   padding-bottom: 10px;
   display: block;
+  display: none;
 }
 
 .content {
@@ -117,10 +130,10 @@ p {
 
 @media (min-width: 480px) {
   .selections .content {
-    display: block;
+  //  display: block;
   }
   .selections .show {
-    display: none;
+  //  display: none;
   }
 }
 

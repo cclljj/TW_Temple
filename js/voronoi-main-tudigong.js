@@ -32,8 +32,8 @@
       lastSelectedPoint = point;
       cell.classed('selected', true);
 
-      //d3.select('#selected h1')
-      //  .html(point.name + " (" + point.address + ")")
+      d3.select('#selected h1')
+        .html(point.name + " (" + point.address + ")")
     }
 
     var drawPointTypeSelection = function() {
@@ -137,47 +137,6 @@
         .attr("class", "point-cell")
         .attr("d", buildPathFromPoint)
         .on('click', selectPoint)
-	.on("mouseover", function(d) { 
-		//console.log(d.name,d.address,d.type,d.religion,d.corresponding,d.phone);
-		d3.select('#showinfo').html("&nbsp;<b>"+d.name+"</b>")
-				.append('p')
-				.html("地址: " + d.address)
-				.append('p')
-				.html("主神: " + d.type)
-				.append('p')
-				.html("宗教: " + d.religion)
-				.append('p')
-				.html("負責人: " + d.corresponding + " (" + d.phone + ")");
-		var divL = 0;
-		var divT = 0;
-
-		if (d3.event.pageX<parseInt(svg.style("width"), 10) - 200 - 7){  // assume the text-box size is 200px width
-			divL = d3.event.pageX + 7;
-		} else {
-			divL = d3.event.pageX -200 - 7;
-		}
-		if (d3.event.pageY< parseInt(svg.style("height"), 10) - 100 - 15) {  // assume the text-box size is 100px height
-			divT = d3.event.pageY - 15;
-		} else {
-			divT = d3.event.pageY - 100 - 15;
-		}
-
-		d3.select('#showinfo').style("left", divL + "px")
-				.style("top", divT + "px")
-				.style("padding", "5px")
-				.style("border", "solid #ccc 1px")
-	 			.style("display", "block")
-				.style("opacity", 1);
-		})
-	.on("mouseout", function() { 
-		d3.select('#showinfo').html("")
-				.style("padding", 0)
-				.style("border", "0px")
-				.style("opacity",0)
-				.style("display","none");
-		})
-	.on("mousemove", function(d) {
-		})
         .classed("selected", function(d) { return lastSelectedPoint == d });
 
       svgPoints.append("circle")
@@ -207,7 +166,7 @@
   // leaflet map
   let map;
   let Stamen_TonerLite;
-  let url = "data/temple.tsv";
+  let url = "data/data.tsv";
   let initialSelection = d3.set([
       'ProbeCube', 'Webduino', 'AirQ', 
       'AirU', 'DustBoy', 'CityAir', 'AoT', 'PurpleAir'
