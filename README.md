@@ -1,7 +1,7 @@
 # Voronoi Diagram of 台灣(已立案)寺廟
 
-- Demo 網站：[https://aws.cclljj.net/TW_Temple/](https://cclljj.github.io/TW_Temple/)
-- 土地公寺廟限定版：[https://aws.cclljj.net/TW_Temple/index-tudigong.html](https://cclljj.github.io/TW_Temple/index-tudigong.html)
+- Demo 網站：[https://cclljj.github.io/TW_Temple/](https://cclljj.github.io/TW_Temple/)
+- 土地公寺廟限定版：[https://cclljj.github.io/TW_Temple/index-tudigong.html](https://cclljj.github.io/TW_Temple/index-tudigong.html)
 
 ![台灣(已立案)寺廟](Temples.png)
 
