@@ -178,14 +178,12 @@
     minZoom: 8
   }).setView([25, 121.2], 10);
 
-  Stamen_TonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png', {
-    attribution: `Map tiles by <a target="_blank" rel="noopener noreferrer" href="https://stamen.com">Stamen Design</a>, ` +
-      `under <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ` +
-      `Data by <a target="_blank" rel="noopener noreferrer" href="https://openstreetmap.org">OpenStreetMap</a>, ` +
-      `under <a target="_blank" rel="noopener noreferrer" href="http://www.openstreetmap.org/copyright">ODbL</a>. ` +
-      `Hosting by <a target="_blank" rel="noopener noreferrer" href="https://stadiamaps.com/">Stadia Maps</a>.`,
+  Stamen_TonerLite = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: `&copy; <a target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ` +
+      `&copy; <a target="_blank" rel="noopener noreferrer" href="https://carto.com/attributions">CARTO</a>`,
+    subdomains: 'abcd',
     minZoom: 0,
-    maxZoom: 16
+    maxZoom: 19
   }).addTo(map);
 
   if (!L.Browser.touch) {
