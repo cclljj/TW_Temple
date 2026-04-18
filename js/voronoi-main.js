@@ -260,15 +260,14 @@
     minZoom: 8
   }).setView([25, 121.2], 10);
 
-  Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
-    attribution: `<a target="_blank" rel="noopener noreferrer" href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>CC-BY-NC-SA</a> | ` +
-      `Tiles by <a target="_blank" rel="noopener noreferrer" href="http://stamen.com">Stamen Design</a>, ` +
-      `&copy; <a target="_blank" rel="noopener noreferrer" href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>`,
-    // Credits not used
-    // <a href='https://sites.google.com/site/cclljj/NRL'>IIS-NRL</a>
+  Stamen_TonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png', {
+    attribution: `Map tiles by <a target="_blank" rel="noopener noreferrer" href="https://stamen.com">Stamen Design</a>, ` +
+      `under <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ` +
+      `Data by <a target="_blank" rel="noopener noreferrer" href="https://openstreetmap.org">OpenStreetMap</a>, ` +
+      `under <a target="_blank" rel="noopener noreferrer" href="http://www.openstreetmap.org/copyright">ODbL</a>. ` +
+      `Hosting by <a target="_blank" rel="noopener noreferrer" href="https://stadiamaps.com/">Stadia Maps</a>.`,
     minZoom: 0,
-    maxZoom: 16,
-    ext: 'png'
+    maxZoom: 16
   }).addTo(map);
 
   if (!L.Browser.touch) {
