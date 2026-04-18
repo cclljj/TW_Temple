@@ -178,7 +178,7 @@
     minZoom: 8
   }).setView([25, 121.2], 10);
 
-  Stamen_TonerLite = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  Stamen_TonerLite = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
     attribution: `&copy; <a target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ` +
       `&copy; <a target="_blank" rel="noopener noreferrer" href="https://carto.com/attributions">CARTO</a>`,
     subdomains: 'abcd',
